@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | KwikQR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .policy-content { background: white; padding: 3rem; border-radius: 24px; border: 1px solid #e2e8f0; margin-top: 2rem; }
+        .policy-section { margin-bottom: 2.5rem; }
+        .policy-section h3 { color: var(--primary); border-bottom: 2px solid #f1f5f9; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        .highlight-box { background: #f0f9ff; border: 1px dashed var(--primary); padding: 1.5rem; border-radius: 12px; margin: 1rem 0; }
+        .legal-tag { font-size: 0.75rem; font-weight: 700; background: #e2e8f0; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <span class="logo">Kwik<span>QR</span></span>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="manual.html">Install Guide</a>
+                <a href="policy.html" class="active">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 800px; padding-top: 4rem;">
+        <header style="text-align: center; margin-bottom: 1rem;">
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Transparency on how we protect your financial data.</p>
+        </header>
+
+        <div class="policy-content">
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Effective Date: January 02, 2026</p>
+
+            <div class="policy-section">
+                <h3>1. Our Privacy Core Principle</h3>
+                <p>KwikQR is built on the principle of <b>Zero Data Collection</b>. The application is a local-only utility tool. We believe that your financial habits and M-Pesa transaction details are your business, and yours alone.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>2. Sensitive Permissions Disclosure</h3>
+                <p>To provide automation services, KwikQR requires the following sensitive Android permissions:</p>
+                
+                <div class="highlight-box">
+                    <p><span class="legal-tag">Accessibility API</span> <b>Purpose:</b> We use this API to interact with system payment dialogs (USSD/STK Push). It allows the app to read the screen content to identify payment fields and simulate user clicks to complete the transaction process on your behalf.</p>
+                    <p><b>Data Handling:</b> This API <u>does not</u> record your screen, log your PIN, or transmit any data to external servers. It operates strictly in real-time on your device.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <p><span class="legal-tag">SMS Permission</span> <b>Purpose:</b> KwikQR reads incoming M-Pesa confirmation messages to extract transaction details (Amount, Recipient, Transaction Code). This is required to automate record-keeping and verify payment status.</p>
+                    <p><b>Data Handling:</b> SMS data is processed locally in the app's secure sandbox. We do not access personal messages or non-financial SMS.</p>
+                </div>
+            </div>
+
+            <div class="policy-section">
+                <h3>3. Data Storage & Security</h3>
+                <ul>
+                    <li><b>Local Storage:</b> Any transaction history you see in the app is stored in a local <b>Hive Database</b> on your device.</li>
+                    <li><b>No Cloud Sync:</b> We do not use Firebase, AWS, or any cloud providers. If you delete the app, your data is gone forever.</li>
+                    <li><b>Encryption:</b> We rely on the Android System Sandbox to prevent other apps from accessing KwikQR's local database.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>4. Third-Party Sharing</h3>
+                <p>KwikQR <b>does not share, sell, or rent</b> any user information to third parties, advertisers, or data brokers. There are no third-party SDKs (like Facebook or Google Analytics) bundled in this application.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>5. Contact & Open Source</h3>
+                <p>As an Open Source project under the <b>GPLv3 License</b>, our logic is transparent. You can audit our source code at any time on GitHub.</p>
+                <p>For questions, contact: <a href="mailto:denisgitari082@gmail.com">denisgitari082@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 KwikQR • All code is public on GitHub.</p>
+    </footer>
+</body>
+</html>

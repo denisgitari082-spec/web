@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Guide | KwikQR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the Manual Page */
+        .download-section {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: white;
+            border-radius: 24px;
+            margin-top: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+        .step-number {
+            background: var(--primary);
+            color: white;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .warning-box {
+            background: #fff7ed;
+            border-left: 4px solid #f97316;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .warning-box h4 { color: #9a3412; margin-top: 0; }
+        .step-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            border: 1px solid #f1f5f9;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <span class="logo">Kwik<span>QR</span></span>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="manual.html" class="active">Install Guide</a>
+                <a href="policy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 700px; padding-top: 4rem;">
+        <header style="text-align: center; margin-bottom: 3rem;">
+            <h1 style="font-size: 2.5rem;">Get Started</h1>
+            <p class="subtitle">Follow these steps to safely install KwikQR on your Android device.</p>
+        </header>
+
+        <div class="download-section">
+            <div class="icon" style="font-size: 3rem;">📦</div>
+            <h3>Latest Version</h3>
+            <p style="color: var(--text-muted);">Version 1.0.2 • Stable Release</p>
+            <a href="https://drive.google.com/file/d/1c_1DurfPQeG0bd0km5c3gxJ-Cdmr8kTb/view?usp=drive_web" class="btn primary" style="background: #22c55e; box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.4);">
+                Download APK Now
+            </a>
+        </div>
+
+        <h2 style="margin-top: 4rem;">Installation Steps</h2>
+
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <h4>Enable Unknown Sources</h4>
+            <p>When you open the downloaded file, Android may block it. Tap <b>Settings</b> in the popup and toggle <b>"Allow from this source"</b> to ON.</p>
+        </div>
+
+        <div class="warning-box">
+            <h4>⚠️ Important for Redmi & Samsung</h4>
+            <p>Newer Android versions (2025/2026) might "Grey Out" the Accessibility button. This is a common security feature for apps installed outside the Play Store.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <h4>Fix "Restricted Settings"</h4>
+            <p>If you cannot turn on the Automation (Accessibility) service:</p>
+            <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                <li>Go to your phone <b>Settings</b> > <b>Apps</b>.</li>
+                <li>Find and tap on <b>KwikQR</b>.</li>
+                <li>Tap the <b>three vertical dots (⋮)</b> in the top right corner.</li>
+                <li>Select <b>"Allow Restricted Settings"</b>.</li>
+                <li>Now return to Accessibility and turn on KwikQR.</li>
+            </ul>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <h4>Grant SMS Permissions</h4>
+            <p>Open the app and allow the SMS permission so KwikQR can detect your M-Pesa transaction QRs and messages.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 KwikQR. Proudly Kenyan 🇰🇪</p>
+    </footer>
+</body>
+</html>
