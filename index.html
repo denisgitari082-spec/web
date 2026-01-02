@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="KwikQR: The fastest offline M-Pesa QR scanner and automation tool for Kenya. Scan and pay in seconds.">
-<meta name="keywords" content="KwikQR, M-Pesa, QR Scanner, Kenya, STK Push, Automation, QR payments">
-<meta name="author" content="Denis Gitari">
-
-<meta property="og:title" content="KwikQR | Fast M-Pesa Automation">
-<meta property="og:description" content="Scan. Confirm. Done. The secure way to pay via M-Pesa.">
-<meta property="og:image" content="https://webkwikqr.vercel.app//og-image.jpg">
+    <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" />
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KwikQR | Smart M-Pesa Automation</title>
+    <title>KwikQR | Fast & Secure M-Pesa Automation</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <meta name="description" content="KwikQR: The fastest offline M-Pesa QR scanner and automation tool for Kenya. Scan and pay in seconds without manual typing.">
+    <meta name="keywords" content="KwikQR, M-Pesa, QR Scanner, Kenya, STK Push, Automation, QR payments, Denis Gitari">
+    <meta name="author" content="Denis Gitari">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webkwikqr.vercel.app/">
+    <meta property="og:title" content="KwikQR | Smart M-Pesa Automation">
+    <meta property="og:description" content="Scan. Confirm. Done. The secure, offline way to automate your M-Pesa payments.">
+    <meta property="og:image" content="https://webkwikqr.vercel.app/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="nav-content">
-            <span class="logo">Kwik<span>QR</span></span>
+            <div class="logo-group" style="display: flex; align-items: center; gap: 12px;">
+                <img src="logo.png" alt="KwikQR Logo" style="height: 38px; width: 38px; border-radius: 8px;">
+                <span class="logo">Kwik<span>QR</span></span>
+            </div>
             <div class="links">
                 <a href="index.html" class="active">Home</a>
                 <a href="manual.html">Install Guide</a>
@@ -28,16 +41,25 @@
 
     <header class="hero">
         <div class="container">
-            <span class="badge">Made for Kenya 🇰🇪</span>
+            <span class="badge">Version 1.0.2 Stable 🇰🇪</span>
             <h1>Scan. Confirm. <br><span class="gradient-text">Done.</span></h1>
             <p class="subtitle">A secure, <b>offline-first</b> tool built to simplify M-Pesa. No manual typing. No mistakes. Just speed.</p>
             
             <div class="cta-group">
-                <a href="manual.html" class="btn primary">Download Latest APK</a>
-                <a href="manual.html#guide" class="btn secondary">View Install Guide</a>
+                <a href="manual.html" class="btn primary">Download APK</a>
+                <a href="manual.html#guide" class="btn secondary">Installation Guide</a>
             </div>
         </div>
     </header>
+
+    <section class="store-preview" style="text-align: center; padding: 2rem 0;">
+        <div class="container">
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 20px; display: inline-flex; align-items: center; gap: 15px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store" style="height: 40px; opacity: 0.6;">
+                <p style="margin: 0; font-weight: 600; color: #64748b;">Coming to Play Store January 2026</p>
+            </div>
+        </div>
+    </section>
 
     <section class="features">
         <div class="container">
@@ -45,24 +67,30 @@
                 <div class="card">
                     <div class="icon">⚡</div>
                     <h3>Insanely Fast</h3>
-                    <p>Scan any QR and trigger the STK push automatically. No more Dialing *334#.</p>
+                    <p>Scan any QR and trigger the STK push automatically. Skip the long USSD menus like *334#.</p>
                 </div>
                 <div class="card">
                     <div class="icon">🔒</div>
                     <h3>Bank-Level Privacy</h3>
-                    <p>We use zero servers. Your transaction data stays on your phone, encrypted by Android.</p>
+                    <p>Zero servers involved. Your transaction data stays on your phone, encrypted by the Android system.</p>
                 </div>
                 <div class="card">
                     <div class="icon">📱</div>
-                    <h3>User-Centric</h3>
-                    <p>Built to work perfectly on Infinix, Tecno, and Redmi devices.</p>
+                    <h3>Device Optimized</h3>
+                    <p>Specifically tested to overcome "Restricted Settings" on Redmi, Tecno, and Infinix devices.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 KwikQR Open Source Project. Licensed under GPLv3.</p>
+    <footer style="margin-top: 4rem; border-top: 1px solid #e2e8f0; padding-top: 2rem;">
+        <div class="container" style="text-align: center;">
+            <p style="font-weight: 600; color: var(--text-main);">KwikQR 2026</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+                Open Source Project • Licensed under GPLv3<br>
+                Built with ❤️ for the Kenyan Developer Community
+            </p>
+        </div>
     </footer>
 
     <script src="index.js"></script>
